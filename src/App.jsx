@@ -3,6 +3,8 @@ import Footer from "./Components/Footer";
 import Navbar from "./Components/Navbar";
 import Banner from "./Pages/Home/Banner/Banner";
 import Brand from "./Pages/Home/Brand/Brand";
+import BuiltTeam from "./Pages/Home/BuiltTeam/BuiltTeam";
+import BuiltWork from "./Pages/Home/BuiltWork.jsx/BuiltWork";
 import Collaborate from "./Pages/Home/Collaborate/Collaborate";
 import Connect from "./Pages/Home/Connect/Connect";
 import Relationship from "./Pages/Home/Relationship/Relationship";
@@ -20,6 +22,8 @@ function App() {
         <Work />
         <Connect />
         <Relationship />
+        <BuiltWork />
+        <BuiltTeam />
         <Testimonials />
       </div>
       <Footer />

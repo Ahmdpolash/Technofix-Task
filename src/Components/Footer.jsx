@@ -7,7 +7,7 @@ const Footer = () => {
   return (
     <div className="bg-[#02033B] text-white">
       <div className="px-6 md:px-14 lg:px-28 py-5 lg:py-10">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items- gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-center gap-4">
           <div className="space-y-4 lg:space-y-6">
             <h2 className="text-2xl font-semibold ">Scan. Detect. Remove.</h2>
             <div className="flex items-center gap-x-4 lg:gap-x-6">
@@ -35,7 +35,7 @@ const Footer = () => {
           </div>
 
           <div>
-            <h1 className="font-bold text-3xl border-b border-slate-400 py-4">
+            <h1 className="font-bold text-3xl  border-slate-400 py-4">
               Miro
             </h1>
             <div className="pt-4 lg:pt-6">
@@ -88,7 +88,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <p className="pt-4">
+        <p className="pt-10">
           Apple, the Apple logo, and iPhone are trademarks of Apple Inc.,
           registered in the U.S. and other <br /> countries. App Store is a service
           mark of Apple Inc. Android, Google Play <br /> and the Google Play logo are
