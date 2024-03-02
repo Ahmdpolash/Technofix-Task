@@ -3,6 +3,7 @@ import Navbar from "./Components/Navbar";
 import Banner from "./Pages/Home/Banner/Banner";
 import Brand from "./Pages/Home/Brand/Brand";
 import Collaborate from "./Pages/Home/Collaborate/Collaborate";
+import Work from "./Pages/Home/Work/Work";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <Banner />
         <Brand />
         <Collaborate />
+        <Work />
       </div>
     </div>
   );
