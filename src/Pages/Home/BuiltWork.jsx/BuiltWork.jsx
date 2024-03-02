@@ -27,7 +27,7 @@ const BuiltWork = () => {
       </h1>
       {/* tabs */}
       <div>
-        <ul className="flex flex-wrap gap-6 mb-3 items-center">
+        <ul className="flex flex-wrap lg:gap-6 mb-3 items-center">
           {work?.map((workTab) => (
             <li
               onClick={() => handleTabClick(workTab)}
