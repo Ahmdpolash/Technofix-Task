@@ -76,7 +76,7 @@ const Testimonials = () => {
             continue to extend into the future.”
           </p>
 
-          <div className="mt-4 lg:mt-[80px] flex gap-2 items-center">
+          <div className="mt-4 lg:mt-[77px] flex gap-2 items-center">
             <img src={user3} className="border rounded-full" alt="user" />
             <div className="space-y-">
               <h2 className="font-medium text-[18px] text-slate-600">

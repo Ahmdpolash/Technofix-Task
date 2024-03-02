@@ -1,4 +1,5 @@
 import "./App.css";
+import Footer from "./Components/Footer";
 import Navbar from "./Components/Navbar";
 import Banner from "./Pages/Home/Banner/Banner";
 import Brand from "./Pages/Home/Brand/Brand";
@@ -21,6 +22,7 @@ function App() {
         <Relationship />
         <Testimonials />
       </div>
+      <Footer />
     </div>
   );
 }
