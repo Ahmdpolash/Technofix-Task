@@ -4,6 +4,7 @@ import { RxCross1 } from "react-icons/rx";
 import logo from "../assets/logo/logo.png";
 import { LuMoveRight } from "react-icons/lu";
 import { AiOutlineGlobal } from "react-icons/ai";
+import { IoChevronDownOutline } from "react-icons/io5";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
@@ -14,15 +15,67 @@ const Navbar = () => {
 
   const navList = (
     <>
-      <a to="/" className="lg:ml-4">
-        Product
-      </a>
-      <a to="/about" className="lg:ml-4">
-        Solutions
-      </a>
-      <a to="/contact" className="lg:ml-4">
-        Resources
-      </a>
+      <div className="relative group">
+        <a to="/" className="lg:ml-3 flex items-center gap-1">
+          Product <IoChevronDownOutline className="mt-1" />
+        </a>
+        {/* Dropdown content */}
+        <div className="absolute hidden lg:block left-0 top-full group-hover:duration-500 transition-all ease-in-out mt-4 w-[400px] bg-white shadow-md text-black z-[999999] border border-gray-200 rounded-lg p-2 opacity-0 group-hover:opacity-100 ">
+          <div className="grid grid-cols-3">
+            <ul className="flex flex-col items-center gap-4 p-2">
+              <li>Product 1</li>
+              <li>Product 1</li>
+              <li>Product 1</li>
+            </ul>
+            <ul className="flex flex-col items-center gap-4 p-2">
+              <li>Product 1</li>
+              <li>Product 1</li>
+              <li>Product 1</li>
+            </ul>
+            <ul className="flex flex-col items-center gap-4 p-2">
+              <li>Product 1</li>
+              <li>Product 1</li>
+              <li>Product 1</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div className="relative group">
+        <a to="/" className="lg:ml-3 flex items-center gap-1">
+          Solutions <IoChevronDownOutline className="mt-1" />
+        </a>
+        {/* Dropdown content */}
+        <div className="absolute hidden lg:block left-0 top-full mt-4 w-[200px] bg-white shadow-md text-black z-[999999] border border-gray-200 rounded-lg p-2 opacity-0 group-hover:opacity-100 group-hover:duration-500 transition-all ease-in-out">
+          <div className="">
+            <ul className="flex flex-col  gap-4 px-2 py-3">
+              <li>Solutions 1</li>
+              <li>Solutions 2</li>
+              <li>Solutions 3</li>
+              <li>Solutions 4</li>
+              <li>Solutions 5</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div className="relative group">
+        <a to="/" className="lg:ml-3 flex items-center gap-1">
+          Resources <IoChevronDownOutline className="mt-1" />
+        </a>
+        {/* Dropdown content */}
+        <div className="absolute hidden lg:block left-0 top-full mt-4 w-[200px] bg-white shadow-md text-black z-[999999] border border-gray-200 rounded-lg p-2 opacity-0 group-hover:opacity-100 group-hover:duration-500 transition-all ease-in-out">
+          <div className="">
+            <ul className="flex flex-col  gap-4 px-2 py-3">
+              <li>Resources 1</li>
+              <li>Resources 2</li>
+              <li>Resources 3</li>
+              <li>Resources 4</li>
+              <li>Resources 5</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
       <a to="/services" className="lg:ml-4">
         Enterprise
       </a>
@@ -42,17 +95,24 @@ const Navbar = () => {
         } w-screen h-screen backdrop-blur-sm top-0 left-0 z-10`}
       ></div>
 
-      <div className="border-b border-slate-200 shadow-sm">
+      <div className="border-b  border-slate-200 shadow-sm">
         <div className="px-4 lg:px-9 py-3 mb-1">
           <div className="flex justify-between items-center">
-            <div className="flex   items-center gap-4 ">
+            <div className="flex relative  items-center gap-4 ">
               <div className="logo w-[100px]">
                 <img className="h-full w-full" src={logo} alt="logo" />
               </div>
 
               {/* Desktop menu */}
-              <div className="hidden  cursor-pointer lg:block mt-2 text-[17px]">
+              <div className="hidden relative cursor-pointer lg:block mt-2 text-[17px]">
                 <ul className="lg:flex lg:gap-2">{navList}</ul>
+              </div>
+
+              {/* Dropdown content */}
+              <div className="absolute left-0 top-2 mt-2 h-10 w-10 bg-black z-[99999999999] border border-gray-200 rounded-lg p-2 opacity-0 group-hover:opacity-100 ">
+                <a href="/">Submenu item 1</a>
+                <a href="/">Submenu item 2</a>
+                {/* Add more submenu items here */}
               </div>
             </div>
 
