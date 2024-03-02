@@ -10,8 +10,8 @@ function App() {
       <Navbar />
       <div className="px-6 md:px-14 lg:px-28 py-5 lg:py-10">
         <Banner />
-        {/* <Brand />
-        <Collaborate /> */}
+        <Brand />
+        <Collaborate />
       </div>
     </div>
   );
