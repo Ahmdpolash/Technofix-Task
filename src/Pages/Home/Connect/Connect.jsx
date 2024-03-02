@@ -5,10 +5,10 @@ const Connect = () => {
   return (
     <div className="py-3 md:py-5 lg:py-7 lg:mt-">
       <div className="grid grid-cols-1 items-center lg:grid-cols-2">
-        <div>
+        <div className="lg:mx-0 md:mx-auto">
           <img className="w-[500px]" src={image} alt="work-image" />
         </div>
-        <div className="space-y-3 ">
+        <div className="space-y-1 lg:space-y-3 ">
           <h1 className=" text-[#050038] text-2xl md:text-3xl lg:text-5xl font-bold">
             Connect your tools, <br /> close your tabs
           </h1>

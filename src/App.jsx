@@ -4,6 +4,8 @@ import Banner from "./Pages/Home/Banner/Banner";
 import Brand from "./Pages/Home/Brand/Brand";
 import Collaborate from "./Pages/Home/Collaborate/Collaborate";
 import Connect from "./Pages/Home/Connect/Connect";
+import Relationship from "./Pages/Home/Relationship/Relationship";
+import Testimonials from "./Pages/Home/Testimonials/Testimonials";
 import Work from "./Pages/Home/Work/Work";
 
 function App() {
@@ -16,6 +18,8 @@ function App() {
         <Collaborate />
         <Work />
         <Connect />
+        <Relationship />
+        <Testimonials />
       </div>
     </div>
   );

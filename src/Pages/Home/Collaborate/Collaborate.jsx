@@ -1,12 +1,15 @@
 import React from "react";
 import { LuMoveRight } from "react-icons/lu";
-
+import img from "../../../assets/Group.png";
 const Collaborate = () => {
   return (
-    <div className="py-3 md:py-7 lg:py-10">
-      <h1 className="text-center text-[#050038] text-2xl md:text-3xl lg:text-5xl font-bold">
+    <div className="py-3 md:py-7 relative lg:py-10  lg:mt-10">
+      <h1 className="text-center  text-[#050038] text-2xl md:text-3xl lg:text-5xl font-bold">
         Collaborate without <br /> constraints
       </h1>
+      <div className="absolute hidden lg:block -top-7 left-[57%]">
+        <img src={img} alt="" />
+      </div>
 
       <div className="grid grid-cols-1 mt-4 md:mt-6 lg:mt-7 cursor-pointer md:grid-cols-2 lg:grid-cols-3 gap-6 items-center">
         <div className="border p-4">
