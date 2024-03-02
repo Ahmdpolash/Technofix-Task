@@ -3,15 +3,26 @@ import { LuMoveRight } from "react-icons/lu";
 import img from "../../../assets/Group.png";
 const Collaborate = () => {
   return (
-    <div className="py-3 md:py-7 relative lg:py-10  lg:mt-10">
-      <h1 className="text-center  text-[#050038] text-2xl md:text-3xl lg:text-5xl font-bold">
-        Collaborate without <br /> constraints
-      </h1>
-      <div className="absolute hidden lg:block -top-7 left-[57%]">
-        <img src={img} alt="" />
+    <div className="py-3 md:py-7 overflow-hidden relative lg:py-10  lg:mt-10">
+      <div
+        data-aos="fade-right"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+      >
+        <h1 className="text-center  text-[#050038] text-2xl md:text-3xl lg:text-5xl font-bold">
+          Collaborate without <br /> constraints
+        </h1>
+        <div className="absolute hidden lg:block -top-7 left-[57%]">
+          <img src={img} alt="" />
+        </div>
       </div>
 
-      <div className="grid grid-cols-1 mt-4 md:mt-6 lg:mt-7 cursor-pointer md:grid-cols-2 lg:grid-cols-3 gap-6 items-center">
+      <div
+        data-aos="fade-left"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+        className="grid grid-cols-1 mt-4 md:mt-6 lg:mt-7 cursor-pointer md:grid-cols-2 lg:grid-cols-3 gap-6 items-center"
+      >
         <div className="border p-4">
           <h1 className="text-[#050038] text-xl font-bold">Free forever</h1>
           <p className="text-slate-600 pt-3 lg:pt-4">

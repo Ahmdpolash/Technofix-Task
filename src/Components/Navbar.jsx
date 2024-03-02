@@ -45,13 +45,13 @@ const Navbar = () => {
       <div className="border-b border-slate-200 shadow-sm">
         <div className="px-4 lg:px-9 py-3 mb-1">
           <div className="flex justify-between items-center">
-            <div className="flex items-center gap-4 ">
+            <div className="flex   items-center gap-4 ">
               <div className="logo w-[100px]">
                 <img className="h-full w-full" src={logo} alt="logo" />
               </div>
 
               {/* Desktop menu */}
-              <div className="hidden cursor-pointer lg:block mt-2 text-[17px]">
+              <div className="hidden  cursor-pointer lg:block mt-2 text-[17px]">
                 <ul className="lg:flex lg:gap-2">{navList}</ul>
               </div>
             </div>

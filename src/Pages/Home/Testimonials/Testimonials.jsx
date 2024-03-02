@@ -9,22 +9,33 @@ import user3 from "../../../assets/Testimonials/user3.png";
 
 const Testimonials = () => {
   return (
-    <div className="py-3 md:py-7 relative lg:py-10  lg:mt-10">
-      <h1 className="text-center  text-[#050038] text-2xl md:text-3xl lg:text-5xl font-bold">
-        Loved by the world's best teams
-      </h1>
-      <div className="text-center pt-4 ">
-        <button className=" font-medium  lg:gap-2 border border-[#4262FF] px-4 lg:px-5 py-2 text-[15px] lg:text-[17px] lg:py-[9px] rounded-full  text-blue-500 ">
-          <div className="flex gap-1 items-center">
-            See all customer stories
-            <span>
-              <LuMoveRight className="mt-[2px] " />
-            </span>
-          </div>
-        </button>
+    <div className="py-3 md:py-7 overflow-hidden relative lg:py-10  lg:mt-10">
+      <div
+        data-aos="zoom-in"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+      >
+        <h1 className="text-center  text-[#050038] text-2xl md:text-3xl lg:text-5xl font-bold">
+          Loved by the world's best teams
+        </h1>
+        <div className="text-center pt-4 ">
+          <button className=" font-medium  lg:gap-2 border border-[#4262FF] px-4 lg:px-5 py-2 text-[15px] lg:text-[17px] lg:py-[9px] rounded-full  text-blue-500 ">
+            <div className="flex gap-1 items-center">
+              See all customer stories
+              <span>
+                <LuMoveRight className="mt-[2px] " />
+              </span>
+            </div>
+          </button>
+        </div>
       </div>
 
-      <div className="grid grid-cols-1 mt-4 md:mt-6 lg:mt-7 cursor-pointer md:grid-cols-2 lg:grid-cols-3 gap-6 items-center">
+      <div
+        data-aos="fade-left"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+        className="grid grid-cols-1 mt-4 md:mt-6 lg:mt-7 cursor-pointer md:grid-cols-2 lg:grid-cols-3 gap-6 items-center"
+      >
         <div className="border p-4 lg:h-[322px]">
           <img className="w-[180px]" src={img} alt="logo" />
           <p className="text-slate-600 pt-3 lg:pt-4">

@@ -21,12 +21,16 @@ const BuiltWork = () => {
   };
 
   return (
-    <div className="py-3 md:py-7 relative lg:py-10  lg:mt-10">
+    <div className="py-3 md:py-7 overflow-hidden relative lg:py-10  lg:mt-10">
       <h1 className="text-3xl lg:text-[42px] font-bold text-[#050038] my-4">
         Built for the way you work
       </h1>
       {/* tabs */}
-      <div>
+      <div
+        data-aos="flip-down"
+        data-aos-duration="500"
+        data-aos-easing="ease-in-out"
+      >
         <ul className="flex flex-wrap lg:gap-6 mb-3 items-center">
           {work?.map((workTab) => (
             <li
@@ -45,7 +49,12 @@ const BuiltWork = () => {
       </div>
 
       {tab === "Brainstorming" && (
-        <div className="grid grid-cols-1 items-centr lg:grid-cols-5  mt-5 lg:mt-8">
+        <div
+          data-aos="fade-right"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+          className="grid grid-cols-1 items-centr lg:grid-cols-5  mt-5 lg:mt-8"
+        >
           <div className="col-span-2 order-2 lg:order-1 space-y-3 lg:mt-12">
             <h3 className="text-[19px] text-slate-700 font-medium">
               Brainstorming

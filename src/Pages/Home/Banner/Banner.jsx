@@ -5,12 +5,21 @@ import logo1 from "../../../assets/Banner/Frame.png";
 import logo2 from "../../../assets/Banner/svg (1).png";
 import logo3 from "../../../assets/Banner/svg.png";
 import { IoMdStar, IoMdStarHalf } from "react-icons/io";
+import AOS from "aos";
+import "aos/dist/aos.css"; // You can also use <link> for styles
+// ..
+AOS.init();
 
 const Banner = () => {
   return (
-    <div className="lg:h-[vh] pb-4 w-full flex justify-center items-center">
+    <div className="lg:h-[vh] overflow-hidden pb-4 w-full flex justify-center items-center">
       <div className="flex flex-col-reverse lg:flex-row lg:items-center gap-4 lg:gap-10 justify-btween mt-5 lg:mt-10">
-        <div className="lg:w-[40%] mt-6 lg:mt-0 space-y-3">
+        <div
+          data-aos="fade-right"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+          className="lg:w-[40%] mt-6 lg:mt-0 space-y-3"
+        >
           <h1 className="text-[#050038] w-[%] text-3xl font-bold lg:text-6xl">
             Take ideas from better to best
           </h1>
@@ -56,7 +65,12 @@ const Banner = () => {
           </div>
         </div>
 
-        <div className="lg:ml-0 flex-">
+        <div
+          data-aos="fade-left"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+          className="lg:ml-0 flex- "
+        >
           <img
             src={banner}
             className=" w-full md:w-full 2xl:w-ful lg:w-[720px] lg:h-[450px]"

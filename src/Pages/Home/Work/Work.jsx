@@ -3,9 +3,13 @@ import { FaArrowRight } from "react-icons/fa6";
 import image from "../../../assets/work/work.png";
 const Work = () => {
   return (
-    <div className="py-3 md:py-5 lg:py-7 lg:mt-">
+    <div className="py-3 overflow-hidden md:py-5 lg:py-7 lg:mt-">
       <div className="grid grid-cols-1 items-center lg:grid-cols-2">
-        <div className=" space-y-1 lg:space-y-3 order-2 lg:order-1">
+        <div
+          data-aos="slide-right"
+          data-aos-easing="ease-in"
+          className=" space-y-1 lg:space-y-3 order-2 lg:order-1"
+        >
           <h1 className=" text-[#050038] text-2xl md:text-3xl lg:text-5xl font-bold">
             Work together, <br /> wherever you work
           </h1>
@@ -19,7 +23,12 @@ const Work = () => {
           </button>
         </div>
 
-        <div className="order-1 lg:order-2 lg:mx-0 md:mx-auto">
+        <div
+          data-aos="slide-left"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+          className="order-1 lg:order-2 lg:mx-0 md:mx-auto"
+        >
           <img src={image} alt="work-image" />
         </div>
       </div>

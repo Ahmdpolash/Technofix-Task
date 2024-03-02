@@ -24,13 +24,17 @@ const BuiltTeam = () => {
   };
 
   return (
-    <div className="py-3 md:py-7 relative lg:py-0  lg:mt-10">
+    <div className="py-3 overflow-hidden md:py-7 relative lg:py-0  lg:mt-10">
       <h1 className="text-3xl lg:text-[42px] font-bold text-[#050038] my-4">
         Built for all kinds of teams
       </h1>
 
       {/* tabs */}
-      <div>
+      <div
+        data-aos="flip-up"
+        data-aos-duration="500"
+        data-aos-easing="ease-in-out"
+      >
         <ul className="flex flex-wrap lg:gap-6 mb-3 items-center">
           {team?.map((teamTab) => (
             <li
@@ -49,7 +53,12 @@ const BuiltTeam = () => {
       </div>
 
       {tab === "UX & Design" && (
-        <div className="grid grid-cols-1  lg:grid-cols-5  mt-5 lg:mt-8">
+        <div
+          data-aos="fade-left"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+          className="grid grid-cols-1  lg:grid-cols-5  mt-5 lg:mt-8"
+        >
           <div className="col-span-2 order-2 lg:order-1 space-y-3 lg:mt-6">
             <ul className="flex flex-col text-slate-600 space-y-2">
               <li className="flex  items-center gap-3 text-[18px] ">
